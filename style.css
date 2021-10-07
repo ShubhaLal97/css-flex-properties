@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;*/
+}
+
+.item {
+    background-color:brown ;
+    margin: 16px;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+   /*flex-grow: 2;*/
+   flex-basis: 110px;
+
+}
+
+/* .item:nth-child(2){
+    background-color: blue;
+    /*flex-grow: 4;
+    order: 0;
+} */
+
+.item:nth-child(even){
+    background-color:darkmagenta;
+    align-self: center;
+}
+
+.item:nth-child(odd){
+    background-color: chartreuse;
+    align-self: flex-start;
+}
